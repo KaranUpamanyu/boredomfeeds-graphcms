@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from '../styles/BlogCard.module.css'
 import Image from 'next/image'
 
-function BlogPost({title, author, coverPhoto, content, datePublished, slug}) {
+function BlogPost({title, author, coverPhoto, slug}) {
   return (
     <div className={styles.card}>
       <Link href={`/posts/${slug}`}>

@@ -52,13 +52,14 @@ export default function Home({ posts }) {
       <main className={styles.main}>
         {posts.map((post) => (
           <BlogCard
-            title={post.title}
-            author={post.author}
-            coverPhoto={post.coverPhoto}
-            content={post.content.html}
-            datePublished={post.date_published}
-            slug={post.slug}
-            // key={post.id} {...post}
+            // key={post.id}
+            // title={post.title}
+            // author={post.author}
+            // coverPhoto={post.coverPhoto}
+            // content={post.content.html}
+            // datePublished={post.date_published}
+            // slug={post.slug}
+            key={post.id} {...post}
           />
         ))}
       </main>
